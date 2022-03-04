@@ -1,0 +1,29 @@
+2.	import java.util.*;   
+3.	public class PermutationExample {  
+4.	   static int fact(int number) {  
+5.	      int f = 1;  
+6.	      int j = 1;  
+7.	      while(j <= number) {  
+8.	         f = f * j;  
+9.	         j++;  
+10.	      }  
+11.	      return f;  
+12.	   }  
+13.	   public static void main(String args[]) {  
+14.	         
+15.	      List<Integer> numbers = new ArrayList<Integer>();  
+16.	        
+17.	      numbers.add(12);  
+18.	      numbers.add(13);  
+19.	      numbers.add(1);  
+20.	      numbers.add(6);  
+21.	      numbers.add(9);  
+22.	        
+23.	      int n = numbers.size();  
+24.	      int r = 3;  
+25.	      int result;  
+26.	        
+27.	      result = fact(n) / fact(n-r);  
+28.	      System.out.println("The permutation value for the numbers list is: " + result);  
+29.	   }  
+30.	}  
