@@ -1,0 +1,46 @@
+2.	public class Diamond 
+3.	{
+4.	 
+5.	public static void main(String[] args)
+6.	{
+7.	 
+8.	Scanner sc=new Scanner(System.in);
+9.	System.out.println("Enter N : ");
+10.	int n=sc.nextInt(); 
+11.	System.out.print("Enter Symbol : ");
+12.	 
+13.	char c = sc.next().charAt(0);
+14.	 
+15.	for(int i=1;i<=n;i++)
+16.	{
+17.	for(int j=1;j<=n-i;j++)
+18.	 
+19.	{
+20.	System.out.print(" ");
+21.	}
+22.	 
+23.	for(int j=1;j<=i*2-1;j++)
+24.	 
+25.	{
+26.	System.out.print(c);
+27.	}
+28.	System.out.println();
+29.	 
+30.	} 
+31.	for(int i=n-1;i>0;i--)
+32.	{
+33.	for(int j=1;j<=n-i;j++)
+34.	 
+35.	{
+36.	System.out.print(" ");
+37.	}
+38.	for(int j=1;j<=i*2-1;j++)
+39.	 
+40.	{
+41.	System.out.print(c);
+42.	}
+43.	System.out.println();
+44.	}
+45.	 
+46.	}
+47.	}
